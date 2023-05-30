@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main {
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+#end-game-container{
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* btn start over */
+.css-button-sliding-to-bottom--blue {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #2c0b8e;
+    color: #2c0b8e;
+}
+.css-button-sliding-to-bottom--blue:hover {
+    color: #fff;
+}
+.css-button-sliding-to-bottom--blue:hover:after {
+    height: 100%;
+}
+.css-button-sliding-to-bottom--blue:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background: #2c0b8e;
+}
+
+/* boton easy */
+.css-button-sliding-to-left--black {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: transparent;
+    overflow: hidden;
+    border: 2px solid #212529;
+    color: #212529;
+}
+.css-button-sliding-to-left--black:hover {
+    color: #fff;
+}
+.css-button-sliding-to-left--black:hover:after {
+    width: 100%;
+}
+.css-button-sliding-to-left--black:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #212529;
+}
+
+/* btn hard */
+.css-button-sliding-to-left--red {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: transparent;
+    overflow: hidden;
+    border: 2px solid #d90429;
+    color: #d90429;
+}
+.css-button-sliding-to-left--red:hover {
+    color: #fff;
+}
+.css-button-sliding-to-left--red:hover:after {
+    width: 100%;
+}
+.css-button-sliding-to-left--red:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #d90429;
+}
+
+/* btn medium */
+.css-button-sliding-to-bottom--green {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: transparent;
+    overflow: hidden;
+    border: 2px solid #57cc99;
+    color: #57cc99;
+}
+.css-button-sliding-to-bottom--green:hover {
+    color: #fff;
+}
+.css-button-sliding-to-bottom--green:hover:after {
+    height: 100%;
+}
+.css-button-sliding-to-bottom--green:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background: #57cc99;
+}
+
+
+#text {
+    width: 80%;
+    height: 28px;
+    background: transparent;
+    border: 0.5px solid paleturquoise;
+    color: black;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+input[type="text" i] {
+    padding: 5px;
+}
+
+h1{
+    color: blue;
+}
+
+h3{
+    color: #fff256;
+    font-size: 2rem;
+}
+
+.time-container, .score-container {
+    color: red;
+}
+
+#timeSpan{
+    color: black;
+}
+
+.end-game-container p{
+    color:#2c0b8e
+}
+
+.end-game-container span{
+    color: black;
+}
+
+#score {
+    color: black;
+}
+
+@media (min-width: 800px) {
+    video{
+        width: 100%;
+    }
+
+    #text{
+        width: 100%;
+    }
+}
+
